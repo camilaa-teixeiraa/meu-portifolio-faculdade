@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('LEMONMILK-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'FonteBody';
+    src: url('MADECarvingSoftPERSONALUSE-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color: #EEDF7A;
+    color: #fff;
+    font-family: 'FonteBody', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'MinhaFonte', serif;
+    background-color: #A04747;
+    padding: 20px;
+    margin: 70px auto 0;
+    text-align: right;
+    width: 80%;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+section {
+    background-color: #A04747;
+    padding: 20px;
+    margin: 10px auto 0;
+    text-align: left;
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+
+.principal {
+    font-family: 'FonteBody', sans-serif;
+    background-color: #A04747;
+    padding: 20px;
+    margin: 10px auto 0;
+    text-align: left;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.imagemPerfil{
+    border-radius: 50%;
+    width: 120px; 
+    height: 120px;
+    object-fit: cover;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto; 
+    grid-template-areas: 
+        "left right"
+        "bottom bottom";
+    gap: 20px;
+    padding: 5px;
+    text-align: right;
+}
+
+/* Estilo comum para todas as caixas */
+.box {
+    background-color: #FFEEAD;
+    color: #000000;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+.box:nth-child(1) {
+    grid-area: left;
+    width: 160px; 
+    height: 250px;
+    text-align: center;
+}
+
+.box:nth-child(2) {
+    grid-area: right;
+    padding: auto;
+    text-align: center;
+    width:825px;
+    height: 250px;
+}
+
+.box:nth-child(3) {
+    grid-area: bottom;
+    height: 100px;
+    text-align: left;
+}
+
+.projects{
+    padding: 10px;
+}
+
+.contatos {
+    text-align: center;
+}
+
+main a{
+    text-align: center;
+    color:  #EEDF7A;
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+
+footer {
+    background-color: #003566;
+    text-align: center;
+    padding: 10px;
+    color: #FFD700;
+}
